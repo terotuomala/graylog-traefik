@@ -1,0 +1,18 @@
+logLevel = "INFO"
+defaultEntryPoints = ["http"]
+
+[entryPoints]
+  [entryPoints.http]
+  address = ":80"
+
+[docker]
+  exposedByDefault = false
+  endpoint = "unix:///var/run/docker.sock"
+  network = "traefik-network"
+  domain = "docker.localhost"
+  watch = true
+  swarmMode = false
+
+[api]
+  entryPoint = "traefik"
+  dashboard = true
