@@ -1,5 +1,5 @@
 # Graylog-Traefik
-Graylog stack running in Docker with Traefik as Reverse Proxy. Traefik handles traffic to Graylog Web Interface and Graylog only exposes TCP/UDP ports 514 (Syslog) and 12201 (GELF) for receiving messages.
+Graylog stack running in Docker with Traefik as Reverse Proxy. Traefik handles traffic to Graylog Web Interface and Graylog only exposes TCP/UDP ports 514 (Syslog) and 12201 (GELF) for receiving messages. Graylog, MongoDB and Elasticsearch persist their data to Docker volumes. Health checks of the Graylog, MongoDB and Elasticsearch services is also included.
 
 ### Usage with docker-compose
 Create docker network for traefik:
