@@ -10,11 +10,14 @@ Start the environment:
 ```
 docker-compose up
 ```
-Open Graylog Web interface using Chrome (because it resolves any *.localhost to the loopback interface): 
+Open Graylog Web interface using Chrome (because it can resolve any *.localhost to the loopback interface): 
 ```
 http://graylog.localhost/
-```
+
 Graylog uses initial username `admin` and password `admin`
+```
+
+Traefik Dashboard can be found at: `http://graylog.localhost:8080/dashboard`
 
 ### Example message
 Enable Input e.g. GELF HTTP :
